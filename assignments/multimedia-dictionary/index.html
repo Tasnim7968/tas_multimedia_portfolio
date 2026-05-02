@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multimedia Dictionary | Tasnim Islam</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <style>
+    .dictionary-box {
+      max-width: 750px;
+      margin: 30px auto;
+    }
+
+    .row {
+      display: flex;
+      gap: 12px;
+      margin: 18px 0;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    select, textarea {
+      flex: 1;
+      padding: 12px;
+      font-size: 1rem;
+      border: 2px solid #d1d5db;
+      border-radius: 8px;
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: none;
+    }
+
+    button {
+      background: #111827;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #374151;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <h2 class="logo">Tasnim Islam</h2>
+      <div class="nav-links">
+        <a href="../../index.html">Home</a>
+        <a href="../index.html">Assignments</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Multimedia Dictionary</h1>
+      <p>A word-to-sound recognition activity using HTML, JavaScript, and the Web Speech API.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card dictionary-box">
+      <h2>Choose a Word</h2>
+      <p>Select a word from the menu. The app will show a sentence and can speak the word or sentence aloud.</p>
+
+      <div class="row">
+        <select id="wordSelect" onchange="showSentence()">
+          <option value="">-- Select a Word --</option>
+          <option value="Apple" data-sentence="The apple is red and sweet.">Apple</option>
+          <option value="Dog" data-sentence="The dog runs happily in the park.">Dog</option>
+          <option value="Sun" data-sentence="The sun shines brightly in the sky.">Sun</option>
+          <option value="Book" data-sentence="The book has many colorful pictures.">Book</option>
+          <option value="Flower" data-sentence="The flower grows beautifully in the garden.">Flower</option>
+        </select>
+
+        <button onclick="speakSelectedWord()">Speak Word</button>
+      </div>
+
+      <div class="row">
+        <textarea id="sentenceBox" readonly placeholder="The sentence will appear here..."></textarea>
+
+        <button onclick="speakSentence()">Speak Sentence</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <a class="btn" href="../index.html">Back to Assignments</a>
+      <a class="btn" href="../../index.html">Return to Main Portfolio</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Tasnim Islam | Introduction to Multimedia Programming</p>
+  </footer>
+
+  <script src="dictionary.js"></script>
+</body>
+</html>
