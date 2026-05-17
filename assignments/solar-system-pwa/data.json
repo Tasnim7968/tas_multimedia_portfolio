@@ -1,0 +1,29 @@
+{
+  "topics": [
+    {
+      "title": "The Sun",
+      "description": "The Sun is the star at the center of our solar system. It gives Earth light and heat, making life possible.",
+      "image": "https://images.unsplash.com/photo-1614642264762-d0a3b8bf3700?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "title": "Mercury",
+      "description": "Mercury is the closest planet to the Sun. It is small, rocky, and has extreme temperatures.",
+      "image": "https://images.unsplash.com/photo-1614732414444-096e5f1122d5?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "title": "Earth",
+      "description": "Earth is our home planet. It has liquid water, oxygen, land, and many forms of life.",
+      "image": "https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "title": "Mars",
+      "description": "Mars is known as the Red Planet because of its reddish surface. Scientists study Mars to learn if life once existed there.",
+      "image": "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "title": "Jupiter",
+      "description": "Jupiter is the largest planet in the solar system. It is a gas giant with a famous storm called the Great Red Spot.",
+      "image": "https://images.unsplash.com/photo-1630839437035-dac17da580d0?auto=format&fit=crop&w=900&q=80"
+    }
+  ]
+}

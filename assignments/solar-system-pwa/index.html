@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Solar System Explorer PWA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <header>
+    <h1>Solar System Explorer</h1>
+    <p>An educational Progressive Web App by Tasnim Islam</p>
+    <button id="installBtn" hidden>Install App</button>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Choose a Topic</h2>
+      <select id="topicMenu"></select>
+    </section>
+
+    <section class="card content-card">
+      <h2 id="topicTitle">Welcome</h2>
+      <img id="topicImage" src="" alt="Topic image" />
+      <p id="topicText">Select a topic to learn about the solar system.</p>
+      <button onclick="speakText()">Read Aloud</button>
+    </section>
+
+    <section class="links">
+      <a href="promo.html">Promotional Page</a>
+      <a href="instructions.html">Instructions & Documentation</a>
+      <a href="../../index.html">Back to Portfolio</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Tasnim Islam | Introduction to Multimedia Programming</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

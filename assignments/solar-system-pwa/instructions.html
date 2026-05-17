@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Instructions | Solar System Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Instructions & Documentation</h1>
+    <p>Solar System Explorer PWA</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>User Instructions</h2>
+      <ol>
+        <li>Open the Solar System Explorer app.</li>
+        <li>Select a topic from the dropdown menu.</li>
+        <li>Read the topic description and view the image.</li>
+        <li>Click “Read Aloud” to hear the topic spoken.</li>
+        <li>Install the app if the browser shows the install option.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>App Features</h2>
+      <p>
+        This app uses HTML5, CSS, JavaScript, JSON, a web app manifest,
+        and a service worker. The menu is dynamically populated using
+        the topics stored inside data.json.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Programmer Documentation</h2>
+      <p>
+        To add a new learning topic, open data.json and add a new object
+        inside the topics array.
+      </p>
+
+      <pre>
+{
+  "title": "Saturn",
+  "description": "Saturn is famous for its beautiful rings.",
+  "image": "image_url_here"
+}
+      </pre>
+
+      <p>
+        After saving data.json, the app will automatically add the new topic
+        to the dropdown menu.
+      </p>
+    </section>
+
+    <section class="links">
+      <a href="index.html">Open App</a>
+      <a href="promo.html">Promotional Page</a>
+      <a href="../index.html">Back to Assignments</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Tasnim Islam</p>
+  </footer>
+</body>
+</html>
