@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>YouTube Video Gallery | Tasnim Islam</title>
+  <link rel="stylesheet" href="../../style.css" />
+
+  <style>
+    .video-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .video-card {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      margin: 15px 0;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      border: none;
+    }
+
+    .btn-row {
+      margin-top: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <h2 class="logo">Tasnim Islam</h2>
+      <div class="nav-links">
+        <a href="../../index.html">Home</a>
+        <a href="../index.html">Assignments</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1>YouTube Video Gallery</h1>
+      <p>Three embedded educational videos using HTML iframe elements.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>About This Assignment</h2>
+      <p>
+        This page includes three YouTube videos embedded with iframe code.
+        Each video connects to multimedia programming topics such as HTML5 Canvas,
+        JavaScript animation, and Bootstrap web design.
+      </p>
+    </section>
+
+    <section class="video-grid">
+
+      <div class="video-card">
+        <h2>1. HTML5 Canvas Tutorial</h2>
+        <p>
+          This video explains how HTML5 Canvas works and how JavaScript can be used
+          to draw graphics, shapes, and interactive visuals on a webpage.
+        </p>
+
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/EO6OkltgudE"
+            title="HTML5 Canvas Tutorial for Complete Beginners"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <h2>2. HTML5 Canvas Crash Course</h2>
+        <p>
+          This video gives another beginner-friendly explanation of Canvas and shows
+          how it can be used for creative graphics and animation projects.
+        </p>
+
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/Yvz_axxWG4Y"
+            title="HTML5 Canvas Crash Course for Beginners"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <h2>3. Bootstrap 5 Tutorial</h2>
+        <p>
+          This video introduces Bootstrap 5, a front-end framework used to create
+          responsive and professional-looking websites quickly.
+        </p>
+
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/jb2qnkvClqw"
+            title="Bootstrap 5 Tutorial for Beginners"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="btn-row">
+      <a class="btn" href="../index.html">Back to Assignments</a>
+      <a class="btn" href="../../index.html">Return to Main Portfolio</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Tasnim Islam | Introduction to Multimedia Programming</p>
+  </footer>
+</body>
+</html>
