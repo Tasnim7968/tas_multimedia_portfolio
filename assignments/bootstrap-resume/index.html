@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Bootstrap Resume | Tasnim Islam</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#resumeNav" data-bs-offset="80">
+
+  <!-- NAVBAR -->
+  <nav id="resumeNav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Tasnim Islam</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarLinks">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#honors">Activities</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero text-white text-center">
+    <div class="container">
+      <h1 class="display-3 fw-bold">Tasnim Islam</h1>
+      <p class="lead">Student Portfolio Resume | Introduction to Multimedia Programming</p>
+      <p>Email: tasnim7968@gmail.com | GitHub: Tasnim7968</p>
+      <a href="../../index.html" class="btn btn-light mt-3">Back to Main Portfolio</a>
+    </div>
+  </header>
+
+  <main class="container my-5">
+
+    <!-- SUMMARY -->
+    <section id="summary" class="resume-section">
+      <h2>Professional Summary</h2>
+      <p>
+        Motivated student with an interest in multimedia programming, web design,
+        creative technology, and interactive digital projects. Skilled in creating
+        organized web pages using HTML, CSS, JavaScript, Bootstrap, and multimedia tools.
+      </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="resume-section">
+      <h2>Education</h2>
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">College Student</h5>
+          <p class="card-text">
+            Coursework includes Introduction to Multimedia Programming, web development,
+            creative media design, and interactive digital projects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="resume-section">
+      <h2>Experience</h2>
+
+      <div class="accordion" id="experienceAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#expOne">
+              Multimedia Programming Student
+            </button>
+          </h2>
+          <div id="expOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              Created web-based assignments using HTML5 Canvas, JavaScript, Progressive Web App features,
+              animation tools, and responsive web design techniques.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#expTwo">
+              Portfolio Web Designer
+            </button>
+          </h2>
+          <div id="expTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Designed and maintained a GitHub Pages portfolio to organize and showcase class assignments,
+              creative work, and future projects.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="resume-section">
+      <h2>Skills</h2>
+
+      <span class="badge text-bg-primary skill-badge">HTML5</span>
+      <span class="badge text-bg-success skill-badge">CSS3</span>
+      <span class="badge text-bg-warning skill-badge">JavaScript</span>
+      <span class="badge text-bg-info skill-badge">Bootstrap</span>
+      <span class="badge text-bg-dark skill-badge">GitHub Pages</span>
+      <span class="badge text-bg-secondary skill-badge">Wick Editor</span>
+      <span class="badge text-bg-danger skill-badge">Canvas API</span>
+      <span class="badge text-bg-primary skill-badge">PWA</span>
+    </section>
+
+    <!-- PORTFOLIO CAROUSEL -->
+    <section id="portfolio" class="resume-section">
+      <h2>Portfolio Projects</h2>
+
+      <div id="projectCarousel" class="carousel slide shadow rounded" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="3"></button>
+        </div>
+
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active carousel-box">
+            <h3>Cartoon Canvas Assignment</h3>
+            <p>Created a cartoon scene using HTML5 Canvas, JavaScript drawing functions, layers, and caption text.</p>
+            <a href="../cartoon/index.html" class="btn btn-light">View Project</a>
+          </div>
+
+          <div class="carousel-item carousel-box">
+            <h3>Multimedia Dictionary</h3>
+            <p>Built an interactive dictionary using dropdown menus, data attributes, and speech synthesis.</p>
+            <a href="../multimedia-dictionary/index.html" class="btn btn-light">View Project</a>
+          </div>
+
+          <div class="carousel-item carousel-box">
+            <h3>Solar System PWA</h3>
+            <p>Developed a Progressive Web App with JSON data, a manifest file, service worker, and install support.</p>
+            <a href="../solar-system-pwa/index.html" class="btn btn-light">View Project</a>
+          </div>
+
+          <div class="carousel-item carousel-box">
+            <h3>Wick Animation</h3>
+            <p>Created a layered animation using Wick Editor with tweens, movement, and exported video.</p>
+            <a href="../wick-animation/index.html" class="btn btn-light">View Project</a>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section id="honors" class="resume-section">
+      <h2>Activities & Honors</h2>
+      <div class="alert alert-primary">
+        Active participant in multimedia programming projects, web design assignments,
+        creative technology activities, and portfolio development.
+      </div>
+    </section>
+
+    <section class="text-center my-5">
+      <a href="../index.html" class="btn btn-dark">Back to Assignments</a>
+      <a href="../../index.html" class="btn btn-outline-dark">Return to Portfolio</a>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark text-white text-center p-3">
+    <p class="mb-0">© 2026 Tasnim Islam | Bootstrap Resume Assignment</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

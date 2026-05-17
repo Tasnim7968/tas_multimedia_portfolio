@@ -1,0 +1,53 @@
+body {
+  padding-top: 70px;
+  background: #f4f7fb;
+}
+
+.hero {
+  background: linear-gradient(135deg, #111827, #4f46e5);
+  padding: 90px 20px;
+}
+
+.resume-section {
+  background: white;
+  padding: 35px;
+  margin-bottom: 35px;
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.resume-section h2 {
+  margin-bottom: 20px;
+  color: #111827;
+  border-bottom: 3px solid #4f46e5;
+  padding-bottom: 8px;
+}
+
+.skill-badge {
+  font-size: 1rem;
+  padding: 12px 14px;
+  margin: 6px;
+}
+
+.carousel-box {
+  min-height: 300px;
+  padding: 70px 80px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #1e3a8a, #7c3aed);
+}
+
+.carousel-box h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.carousel-box p {
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin: 20px auto;
+}
+
+footer {
+  margin-top: 40px;
+}
